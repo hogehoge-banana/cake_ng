@@ -1,0 +1,8 @@
+<input type="text" ng-model="searchText" />
+{{searchText}}
+<table >
+<tr ng-repeat="row in surveys | filter:searchText">
+	<td><a href="edit/{{ row.Survey.id }}">{{ row.Survey.id }}</a></td>
+	<td>{{ row.Survey.title }}</td>
+</tr>
+</table>

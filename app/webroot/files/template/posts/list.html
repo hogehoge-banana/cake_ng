@@ -1,0 +1,18 @@
+
+<div class="posts index" >
+	<input type="text" ng-model="searchText" />
+	{{ searchText }}
+	<h2>Posts</h2>
+	<table >
+	<tr>
+			<th>id</th>
+			<th>title</th>
+			<th>author</th>
+	</tr>
+	<tr ng-repeat=" row in posts | filter:searchText">
+		<td>{{ row.Post.id | date}}</td>
+		<td><a href="#/view/{{ row.Post.id }}">{{ row.Post.title }}</a></td>
+		<td><a href="#/author/{{ row.User.id }}">{{ row.User.name }}</a></td>
+	</tr>
+	</table>
+</div>

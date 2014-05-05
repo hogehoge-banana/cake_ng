@@ -1,0 +1,32 @@
+@CHARSET "utf-8";
+hoge {
+	
+}
+.hoge.ng-enter{
+  transition:0.3s linear all;
+  margin-left:50px;
+  opacity:0;
+}
+.hoge.ng-enter.ng-enter-active {
+  opacity:1;
+  margin-left:0px;
+}
+/*
+.hoge.ng-leave.ng-leave-active {
+  -webkit-animation:0.5s my_animation;
+  -moz-animation:0.5s my_animation;
+  -o-animation:0.5s my_animation;
+  animation:0.5s my_animation;
+}
+@keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+@-webkit-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+*/
+
+
+
